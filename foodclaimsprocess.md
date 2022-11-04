@@ -1,3 +1,7 @@
+## Introduction
+Vivendo is a fast food chain in Brazil with over 200 outlets. As with many fast food establishments, customers make claims against the company. For example, they blame
+Vivendo for suspected food poisoning. The legal team, who processes these claims, is currently split across four locations. The new head of the legal department wants to see if there are differences in the time it takes to close claims across the locations.
+
 ## Data Validation
 
 The original data consists of 98 rows and 8 columns. The first thing i did was to make sure that each column has the correct data type assigned to them. In the process of doing that, there were a couple of rows that need to be cleaned, so i did some data cleaning by using functions like SUBSTRING, TO_NUMBER and COALESCE, then continue assigning data types to each one of them. When i was exploring the data, i found that there was a negative value in claim_amount, so i fixed it. Later, i found that there were 7 rows with a value of 0 in the individuals_on_claim column, since there is no detail regarding this column, i assumed it is a false claim and did not include it in the visualization. 

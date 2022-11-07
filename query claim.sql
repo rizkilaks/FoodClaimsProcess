@@ -7,7 +7,7 @@ ALTER TABLE claims
 ALTER COLUMN claim_amount TYPE numeric
 USING TO_NUMBER(claim_amount,'999,000');
 
--- Making sure teach column has the correct data type as mentioned in the guide.
+-- Making sure teach column has the correct data type.
 ALTER TABLE claims
 ALTER COLUMN claim_id TYPE CHAR(255),
 ALTER COLUMN time_to_close TYPE numeric,
